@@ -1,0 +1,29 @@
+.ball {
+	width: 100px;
+    height: 100px;
+	background-color: #006600;
+    border-radius: 50%; /* makes the div round */
+    
+    position: relative;
+    
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+    
+    animation-name: jump;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;            
+}
+
+@keyframes jump {
+	from {
+    	top: 0;
+    }
+
+	to {
+    	top: 100px;
+    }
+}
